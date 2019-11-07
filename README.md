@@ -22,6 +22,10 @@ Repository for "Student Scheduler for Private Teachers" project.
 database.png
 
 **Végpontok:**
-| Entitások | Típus | Elérés | Leírás|  hozzáférés | 
-|--|--|
-|  |  |
+
+| Entitások | Típus | Elérés | Leírás | hozzáférés | 
+| -| -| -|-|-|
+| | GET |  |  | | 
+|| POST| ||-|
+| | DELETE|  |  | |
+| | PUT|  |  | |
