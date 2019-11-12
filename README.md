@@ -28,23 +28,23 @@ Repository for "Student Scheduler for Private Teachers" project.
 
 | Entitások | Típus | Elérés | Leírás | hozzáférés | 
 | -| -| -|-|-|
-|Lesson | GET | Lesson/ | Lekérdezi az összes órát | mindenki| 
-| | GET | Lesson/{id} | Lekérdez egyetlen órát id alapján | mindenki| 
-|| POST| Lesson/ | új órát hoz létre|mindenki|
-| | DELETE| Lesson/{id} | id alapján töröl egy órát | mindenki|
-| | PUT| Lesson/{id} | id alapján egy óra adatain módosít | mindenki|
-|LessonTicket | GET | LessonTicket/ | Lekérdezi az összes bérletet | mindenki| 
-| | GET | LessonTicket/{id} | Lekérdez egyetlen bérletet id alapján | mindenki| 
-|| POST| LessonTicket/ | új bérletet hoz létre|mindenki|
-| | DELETE| LessonTicket/{id} | id alapján töröl egy bérletet | mindenki|
-| | PUT| LessonTicket/{id} | id alapján egy bérlet adatain módosít | mindenki|
-|Teacher | GET | Teacher / | Lekérdezi az összes tanárt | mindenki| 
-| | GET | Teacher/{id} | Lekérdez egyetlen tanárt id alapján | mindenki| 
-|| POST| Teacher/ | új tanárt hoz létre|admin|
-| | DELETE| Teacher/{id} | id alapján töröl egy tanárt | mindenki|
-| | PUT| Teacher/{id} | id alapján egy tanár adatain módosít | mindenki|
-|Student | GET | Student/ | Lekérdezi az összes diákot | mindenki| 
-| | GET | Student/{id} | Lekérdez egyetlen diákot id alapján | mindenki| 
-|| POST| Student/ | új diákot hoz létre|admin|
-| | DELETE| Student/{id} | id alapján töröl egy diákot | mindenki|
-| | PUT| Student/{id} | id alapján egy diák adatain módosít | mindenki|
+|Lesson | GET | lesson/ | Lekérdezi az összes órát | Mindenki| 
+| | GET | lesson/{id} | Lekérdez egyetlen órát id alapján | Mindenki| 
+|| POST| lesson/ | új órát hoz létre| Mindenki|
+| | DELETE| lesson/{id} | id alapján töröl egy órát | Mindenki|
+| | PUT| lesson/{id} | id alapján egy óra adatain módosít | Mindenki|
+|LessonTicket | GET | lesson_ticket/ | Lekérdezi az összes bérletet | Mindenki| 
+| | GET | lesson_ticket/{id} | Lekérdez egyetlen bérletet id alapján | Mindenki| 
+|| POST| lesson_ticket/ | új bérletet hoz létre|Mindenki|
+| | DELETE| lesson_ticket/{id} | id alapján töröl egy bérletet | Mindenki|
+| | PUT| lesson_ticket/{id} | id alapján egy bérlet adatain módosít | Mindenki|
+|Teacher | GET | teacher / | Lekérdezi az összes tanárt | Mindenki| 
+| | GET | teacher/{id} | Lekérdez egyetlen tanárt id alapján | Mindenki| 
+|| POST| teacher/ | új tanárt hoz létre| Admin|
+| | DELETE| teacher/{id} | id alapján töröl egy tanárt | Mindenki|
+| | PUT| teacher/{id} | id alapján egy tanár adatain módosít | Mindenki|
+|Student | GET | student/ | Lekérdezi az összes diákot | Mindenki| 
+| | GET | student/{id} | Lekérdez egyetlen diákot id alapján | Mindenki| 
+|| POST| student/ | új diákot hoz létre| Admin|
+| | DELETE| student/{id} | id alapján töröl egy diákot | Mindenki|
+| | PUT| student/{id} | id alapján egy diák adatain módosít | Mindenki|
