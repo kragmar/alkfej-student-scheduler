@@ -1,6 +1,7 @@
 # Student Scheduler for Private Teachers
 ## Alkalmazások fejlesztése gyakorlati beadandó
 Repository for "Student Scheduler for Private Teachers" project.
+
 **Fejlesztői környezet és haszált technológiák:**
 
  - IntelliJ IDEA 2019.2.4 (Ultimate Edition)
