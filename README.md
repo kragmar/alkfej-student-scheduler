@@ -1,4 +1,5 @@
-# alkfej-student-scheduler
+# Student Scheduler for Private Teachers
+## Alkalmazások fejlesztése gyakorlati beadandó
 Repository for "Student Scheduler for Private Teachers" project.
 **Fejlesztői környezet és haszált technológiák:**
 
