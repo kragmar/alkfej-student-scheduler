@@ -1,0 +1,95 @@
+.table {
+  display: grid;
+  grid-template-columns: .1fr auto;
+  grid-template-rows: .1fr .07fr 1fr;
+  grid-template-areas: 
+    "nav nav"
+    ". header-top"
+    "header-side body";
+  padding: .5em;
+  border: .1em solid #00f;
+  height: 100%;
+  min-height: 75vh; /* change for responsivity with smaller screens */
+}
+
+.table__nav {
+  grid-area: nav;
+  display: flex;
+  align-items: center;
+}
+
+.table__nav__date {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 1.25rem;
+}
+
+.table__nav__date__year {
+  margin-right: 1em;
+}
+
+.table__header__top {
+  grid-area: header-top;
+  display: flex;
+  /*border: .1em solid #000;*/
+}
+
+.table__header__top__cell {
+  padding: .5em;
+  border: .1em solid #f00;
+  width: 100%;
+}
+
+.table__header__side {
+  grid-area: header-side;
+  display: flex;
+  flex-direction: column;
+  /*border: .1em solid #000;*/
+}
+
+.table__header__side__cell {
+  flex: 1;
+  padding: .5em;
+  border: .1em solid #f00;
+}
+
+.table__body {
+  grid-area: body;
+  display: grid;
+  grid-template-rows: repeat(5, minmax(1em, 1fr));
+  grid-template-areas: 
+    "row1"
+    "row2"
+    "row3"
+    "row4"
+    "row5";
+}
+
+.table__body__row {
+  display: grid;
+  grid-template-columns: repeat(9, 1fr);
+  grid-template-rows: repeat(7, .75fr); /* change for responsivity with smaller screens */
+  /*grid-template-areas: 
+    "col1 col2 col3 col4 col5 col6 col7 col8 col9";*/
+  grid-auto-flow: dense;
+  border: .1em solid #000;
+}
+
+.table__body__row__cell {
+  border: .1em solid #f00;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: .7em;
+}
+
+.table__body__row__cell--col1 { grid-column: 1; }
+.table__body__row__cell--col2 { grid-column: 2; }
+.table__body__row__cell--col3 { grid-column: 3; }
+.table__body__row__cell--col4 { grid-column: 4; }
+.table__body__row__cell--col5 { grid-column: 5; }
+.table__body__row__cell--col6 { grid-column: 6; }
+.table__body__row__cell--col7 { grid-column: 7; }
+.table__body__row__cell--col8 { grid-column: 8; }
+.table__body__row__cell--col9 { grid-column: 9; }
