@@ -1,7 +1,7 @@
 export class Lesson {
     id: number;
     lessonStart: string;
-    lessonDate: Date;
+    lessonDate: string;
     lessonType: string;
     student: string;
     teacher: string;
