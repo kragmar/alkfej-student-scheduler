@@ -12,6 +12,8 @@ export class TableComponent implements OnInit {
   lessons: Lesson[];
   columns: string[];
 
+  lesson: Lesson[];
+
   today = new Date();
   dayIterator = new Date();
   currentMonth = this.today.getMonth();
@@ -123,9 +125,16 @@ export class TableComponent implements OnInit {
   setRow(lesson: Lesson, date: Date): Lesson[] {
     let lessonDate = new Date(lesson.lessonDate);
     if(lessonDate.getTime() == date.getTime()) {
+      console.log(lessonDate);
       return new Array<Lesson>(lesson);
     }
     return ;
   }
+
+  // WIP POST
+  /* addLesson(): void {
+    this.weeklyService.addLesson(this.lesson)
+      .subscribe( lesson => this.lesson = lesson);
+  } */
 
 }

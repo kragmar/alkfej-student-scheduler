@@ -23,7 +23,7 @@ public class Lesson extends BaseEntity {
     private String lessonStart;
 
     @Column(nullable = false)
-    private LocalDate lessonDate;
+    private String lessonDate;
 
     @Column(nullable = false)
     @Enumerated(EnumType.STRING)
