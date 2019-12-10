@@ -11,15 +11,17 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HttpClientModule } from '@angular/common/http';
 import { TableComponent } from './weekly-schedule/table/table.component';
 import { WeeklyScheduleComponent } from './weekly-schedule/weekly-schedule.component';
-import { WeeklyService } from './weekly-schedule/services/weekly.service';
+import { DbService } from './services/db.service';
 import { DailyScheduleComponent } from './daily-schedule/daily-schedule.component';
+import { DailyAccordionComponent } from './daily-schedule/daily-accordion/daily-accordion.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     TableComponent,
     WeeklyScheduleComponent,
-    DailyScheduleComponent
+    DailyScheduleComponent,
+    DailyAccordionComponent
   ],
   imports: [
     BrowserModule,
@@ -30,7 +32,7 @@ import { DailyScheduleComponent } from './daily-schedule/daily-schedule.componen
     MatDatepickerModule,
     MatNativeDateModule
   ],
-  providers: [WeeklyService, MatDatepickerModule],
+  providers: [DbService, MatDatepickerModule],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

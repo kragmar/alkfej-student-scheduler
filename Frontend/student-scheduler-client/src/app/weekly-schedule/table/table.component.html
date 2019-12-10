@@ -30,7 +30,7 @@
       <ng-container *ngFor="let lesson of lessons">
         <ng-container *ngFor="let lssn of setRow(lesson, date)">
           <div [className]="'table__body__row__cell' + setCol(lssn)">
-            {{ lssn.lessonType }}
+            {{ lssn.student.name }}
           </div>
         </ng-container>
       </ng-container>

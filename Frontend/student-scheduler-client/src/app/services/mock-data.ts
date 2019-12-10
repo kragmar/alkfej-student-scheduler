@@ -1,4 +1,4 @@
-import { Lesson } from './lesson';
+/* import { Lesson } from './lesson';
 
 export const LESSONS: Lesson[] = [
   {
@@ -97,4 +97,4 @@ export const LESSONS: Lesson[] = [
     student: 'Lorem Ipsum',
     teacher: 'Admin bá'
   }
-];
+]; */
