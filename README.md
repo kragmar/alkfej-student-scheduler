@@ -52,10 +52,12 @@ Repository for "Student Scheduler for Private Teachers" project.
 **Felhasználói Dokumentáció**
 
 **Állományok beszerzése**
-Látogasson el a https://github.com/kragmar/alkfej-student-scheduler oldalra
-Itt kattintson a "Clone and Download" gombra, és azon belül kattintson a "Download as Zip" gombra.
 
-A letöltött állományt csomagoljuk ki
+ - Látogasson el a https://github.com/kragmar/alkfej-student-scheduler oldalra
+
+ - Itt kattintson a "Clone and Download" gombra, és azon belül kattintson a "Download as Zip" gombra.
+
+ - A letöltött állományt csomagoljuk ki
 
 **Adatbázis futtatása NetBeans IDE-vel**
 
