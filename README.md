@@ -22,7 +22,7 @@ Repository for "Student Scheduler for Private Teachers" project.
  
  **Adatbázis modell:**
  
-![enter image description here](https://drive.google.com/file/d/1HTBptkb7yU_FTGWN029rsg7xIf4k1I4X/view?usp=sharing)
+![adatb](https://drive.google.com/file/d/1HTBptkb7yU_FTGWN029rsg7xIf4k1I4X/view?usp=sharing)
 
 **Végpontok:**
 
