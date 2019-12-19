@@ -59,29 +59,29 @@ A letöltött állományt csomagoljuk ki
 
 **Adatbázis futtatása NetBeans IDE-vel**
 
-Nyissa meg a NetBeans IDE-t
+ - Nyissa meg a NetBeans IDE-t
 
-Nyissa meg a projectet
+ - Nyissa meg a projectet
 
-A Projects menüben a project fájl legyen kijelőlve, és akkor a navigátorban megtalálható "spring-boot:run"-ra kattintson
-duplán
+ - A Projects menüben a project fájl legyen kijelőlve, és akkor a navigátorban megtalálható "spring-boot:run"-ra kattintson
+   duplán
 
 **Weboldal futtatása Visual Studio Code-al**
-Nyissa meg a Visual Studio Code-ot
+ - Nyissa meg a Visual Studio Code-ot
 
-Nyissa meg a Frontend mappát
+ - Nyissa meg a Frontend mappát
 
-Nyisson egy terminált, majd lépjen a food-delivery mappába a cd food-delivery kóddal
+ - Nyisson egy terminált, majd lépjen a food-delivery mappába a cd food-delivery kóddal
 
 **Írja be a következőket:**
--npm install @angular/cli@6.2.5
+ - npm install @angular/cli@6.2.5
 
--npm install
+ - npm install
 
-Futassa a weboldalt a ng serve paranccsal
+ - Futassa a weboldalt a ng serve paranccsal
 
 **Weboldal elérése:**
 
-Nyisson egy böngészőt
+- Nyisson egy böngészőt
 
-Írja be a címsorba, hogy localhost:4200
+- Írja be a címsorba, hogy localhost:4200
