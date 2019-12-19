@@ -22,7 +22,7 @@ Repository for "Student Scheduler for Private Teachers" project.
  
  **Adatbázis modell:**
  
-![adatb](https://drive.google.com/file/d/1HTBptkb7yU_FTGWN029rsg7xIf4k1I4X/view?usp=sharing)
+![adatb](https://github.com/kragmar/alkfej-student-scheduler/blob/master/2019-11-08%2002_06_23-dbdiagram.io%20-%20Database%20Relationship%20Diagrams%20Design%20Tool.png)
 
 **Végpontok:**
 
