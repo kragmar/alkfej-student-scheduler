@@ -13,6 +13,9 @@ export class DailyAccordionComponent implements OnInit {
 
   lessons: Lesson[];
   students: Student[];
+  columns: string[];
+
+  today = new Date();
   
   @Input() lessonDate: string;
   @Input() lessonStart: string;
@@ -26,6 +29,7 @@ export class DailyAccordionComponent implements OnInit {
   ngOnInit() {
     this.getLessons();
     this.getStudents();
+    this.getColumns();
   }
 
   getLessons(): void {
@@ -38,23 +42,29 @@ export class DailyAccordionComponent implements OnInit {
       .subscribe(students => this.students = students);
   }
 
-  getSelected(event: any): void {
-    this.studentId = event.target.value;
-
-    this.addLesson();
+  getColumns(): void {
+    this.dbService.getColumns()
+      .subscribe(columns => this.columns = columns);
   }
 
-  createLesson(lessonDate: string, lessonStart: string, lessonType: string/* , studentId: number */): LessonPost {
-    let lesson: LessonPost;
-    lesson = {lessonDate, lessonStart, lessonType, "studentId": 2, "teacherId": null};
+  getTodaysLessons(lesson: Lesson): Lesson[] {
+    let lessonDate = new Date(lesson.lessonDate);
+    let todayString = this.today.getFullYear() + '-' + (this.today.getMonth()+1) + '-' + this.today.getDate();
+    let today = new Date(todayString);
 
-    return lesson;
+    if(lessonDate.getTime() == today.getTime()) {
+      return new Array<Lesson>(lesson);
+    }
+
+    return;
   }
 
-  addLesson(): void {
-    this.dbService
-      .addLesson(this.createLesson(this.lessonDate, this.lessonStart, this.lessonType/* , this.studentId */))
-      .subscribe(lesson => this.lessonPost.push(lesson));
+  getRows(lesson: Lesson, column: string): Lesson[] {
+    if(lesson.lessonStart == column) {
+      return new Array<Lesson>(lesson);
+    }
+    
+    return;
   }
 
 }

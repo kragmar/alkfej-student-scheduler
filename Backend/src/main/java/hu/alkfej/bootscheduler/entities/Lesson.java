@@ -1,5 +1,6 @@
 package hu.alkfej.bootscheduler.entities;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
@@ -31,7 +32,7 @@ public class Lesson extends BaseEntity {
 
     @JoinColumn
     @ManyToOne(targetEntity = Student.class)
-    private List<Student> student;
+    private Student student;
 
     @JoinColumn
     @ManyToOne(targetEntity = Teacher.class)
