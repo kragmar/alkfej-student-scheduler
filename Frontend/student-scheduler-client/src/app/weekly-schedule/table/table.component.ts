@@ -138,4 +138,10 @@ export class TableComponent implements OnInit {
     return ;
   }
 
+  // WIP POST
+  /* addLesson(): void {
+    this.weeklyService.addLesson(this.lesson)
+      .subscribe( lesson => this.lesson = lesson);
+  } */
+
 }
