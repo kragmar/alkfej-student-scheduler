@@ -1,11 +1,8 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { MatDatepickerModule, MatInputModule } from '@angular/material';
+import { MatDatepickerModule } from '@angular/material';
 import { MatNativeDateModule } from '@angular/material';
-import { MatExpansionModule } from '@angular/material';
-import { MatSelectModule } from '@angular/material/select';
-import { MatFormFieldModule } from '@angular/material/form-field';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -17,10 +14,6 @@ import { WeeklyScheduleComponent } from './weekly-schedule/weekly-schedule.compo
 import { DbService } from './services/db.service';
 import { DailyScheduleComponent } from './daily-schedule/daily-schedule.component';
 import { DailyAccordionComponent } from './daily-schedule/daily-accordion/daily-accordion.component';
-import { NavbarComponent } from './navbar/navbar.component';
-import { StudentsComponent } from './students/students.component';
-import { DashboardComponent } from './dashboard/dashboard.component';
-import { LessonsComponent } from './lessons/lessons.component';
 
 @NgModule({
   declarations: [
@@ -28,11 +21,7 @@ import { LessonsComponent } from './lessons/lessons.component';
     TableComponent,
     WeeklyScheduleComponent,
     DailyScheduleComponent,
-    DailyAccordionComponent,
-    NavbarComponent,
-    StudentsComponent,
-    DashboardComponent,
-    LessonsComponent
+    DailyAccordionComponent
   ],
   imports: [
     BrowserModule,
@@ -41,11 +30,7 @@ import { LessonsComponent } from './lessons/lessons.component';
     BrowserAnimationsModule,
     HttpClientModule,
     MatDatepickerModule,
-    MatNativeDateModule,
-    MatExpansionModule,
-    MatSelectModule,
-    MatFormFieldModule,
-    MatInputModule
+    MatNativeDateModule
   ],
   providers: [DbService, MatDatepickerModule],
   bootstrap: [AppComponent]

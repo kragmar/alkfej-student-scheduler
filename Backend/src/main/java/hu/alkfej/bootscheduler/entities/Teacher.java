@@ -23,6 +23,9 @@ public class Teacher extends Person {
     private String password;
 
     @Column(nullable = false)
+    private boolean enabled;
+
+    @Column(nullable = false)
     @Enumerated(EnumType.STRING)
     private Role role;
 
