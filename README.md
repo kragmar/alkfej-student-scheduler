@@ -22,7 +22,7 @@ Repository for "Student Scheduler for Private Teachers" project.
  
  **Adatbázis modell:**
  
-![adatb](https://github.com/kragmar/alkfej-student-scheduler/blob/master/2019-11-08%2002_06_23-dbdiagram.io%20-%20Database%20Relationship%20Diagrams%20Design%20Tool.png)
+![enter image description here](https://lh3.googleusercontent.com/J4bcXX3JxVZtvW8YNG6ls68m1axPWMoKbXod3xJFyoSgybjSaYoUOCq1s_ZP4rv4e9p3TxJDFaHt-CrUT9QRuV6HybkBVFxWW46Wd0fmVF1aakGRVILJLcDYC2JEDuizOimv_8qiR-DGusoPQS732KBOaLPl9BNjj6Xk6pFqlO6bTi6vzQ-fQ5f8TWCI7Zq_YLcPSgQ-5vBrZRJdlumZVmyJ3lYfjezJT9cA8arQGdtfpu5n2DTENZISkbf7A0xSyXWH3soEh8mv-X8zEATl1KxnGr8tlXq6MP15vIIG08G5khw43CBzZMI4SlNr-3VZkndjLYEa3zVGEAZiCaf34aIBYv8-BLN8OO7mrw02HmtdJnWFSKn5sHwDFCLo_FBtJt5T8VO4I6N8P762Yt4kZjFaHAv3Qtc5OYZevC6Y0sHoA6vbPd4FFsCzhVSTQR0aR2wvNla1q3ZdzMZGhLIfl5pJRxfU6SvY8b34d-veFGSmIw55j4wZQZwwu7c2yc93qOVLpKO5grVje-cqs6yBxjFRGKx2eVMe71vcJjJcXEErePjp1kgXH2ejfh-5wxUTlrPq-RrS3S2GAxiCopMB8Ckja4ByXaW2VNnSaCA_U0J00nkziDbCWwp_mEZnVt9Xh7tYrbY8ccGFyLZQWe1SfKFBaBy9-KUePykxUr1v8fFrk0YaEiK6RTs=w1263-h801-no)
 
 **Végpontok:**
 
@@ -48,42 +48,3 @@ Repository for "Student Scheduler for Private Teachers" project.
 || POST| student/ | új diákot hoz létre| Admin|
 | | DELETE| student/{id} | id alapján töröl egy diákot | Mindenki|
 | | PUT| student/{id} | id alapján egy diák adatain módosít | Mindenki|
-
-**Felhasználói Dokumentáció**
-
-**Állományok beszerzése**
-
- - Látogasson el a https://github.com/kragmar/alkfej-student-scheduler oldalra
-
- - Itt kattintson a "Clone and Download" gombra, és azon belül kattintson a "Download as Zip" gombra.
-
- - A letöltött állományt csomagoljuk ki
-
-**Adatbázis futtatása NetBeans IDE-vel**
-
- - Nyissa meg a NetBeans IDE-t
-
- - Nyissa meg a projectet
-
- - A Projects menüben a project fájl legyen kijelőlve, és akkor a navigátorban megtalálható "spring-boot:run"-ra kattintson
-   duplán
-
-**Weboldal futtatása Visual Studio Code-al**
- - Nyissa meg a Visual Studio Code-ot
-
- - Nyissa meg a Frontend mappát
-
- - Nyisson egy terminált, majd lépjen a food-delivery mappába a cd food-delivery kóddal
-
-**Írja be a következőket:**
- - npm install @angular/cli@6.2.5
-
- - npm install
-
- - Futassa a weboldalt a ng serve paranccsal
-
-**Weboldal elérése:**
-
-- Nyisson egy böngészőt
-
-- Írja be a címsorba, hogy localhost:4200

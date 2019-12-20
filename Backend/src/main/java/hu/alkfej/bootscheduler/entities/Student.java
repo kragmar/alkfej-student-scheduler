@@ -1,5 +1,6 @@
 package hu.alkfej.bootscheduler.entities;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
@@ -20,6 +21,7 @@ public class Student extends Person {
     @Column(nullable = false)
     private LocalDate birthDate;
 
+    @JsonIgnore
     @OneToMany(targetEntity = Lesson.class, mappedBy = "student")
     private List<Lesson> lesson;
 
